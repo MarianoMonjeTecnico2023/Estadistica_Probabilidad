@@ -1,199 +1,67 @@
-body{
-    background-color: #007BFF;
-}
-p{
-    font-weight: bold;
-    font-size: medium;
-}
-h3{
-    font-weight: bold;
-   
-}
-h4 {
-    font-weight: bold;}
-    
-h1{
-    font-weight: bold;
-    
-}
-h2{
-    font-weight: bold;
-    
-}
-.Conceptos h4, .Conceptos img {
-    display: inline-block;
-    vertical-align: middle;
+/* Reset de Estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.Conceptos img {
-    margin-right: 5px; /* Ajusta el margen según tu preferencia */
-}
-.Conceptos2 li, .Conceptos2 img {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.Conceptos2 img {
-    margin-right: 5px; /* Ajusta el margen según tu preferencia */
-
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; /* Fondo más claro para un aspecto moderno */
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-.Conceptos3 .inline-image {
-    max-width: 20%;
-    max-height: 100%; /* La altura se ajustará automáticamente para mantener la proporción */
-    display: inline-block;
-    margin-right: 5px; /* Ajusta el margen según tu preferencia */
-}
-.Conceptos4 li, .Conceptos2 img {
-    display: inline-block;
-    vertical-align: middle;
+/* Encabezado y Navegación */
+header {
+    color:black;
+    padding: 20px;
+    text-align: center;
 }
 
-.Conceptos4 img {
-    max-width: 20%;
-    max-height: 100%; /* La altura se ajustará automáticamente para mantener la proporción */
-    display: inline-block;
-    margin-right: 5px; /* Ajusta el margen según tu preferencia */
-
-}
-.Conceptos5 .inline-image2 {
-    max-width: 20%;
-    max-height: 100%; /* La altura se ajustará automáticamente para mantener la proporción */
-    display: inline-block;
-    margin-right: 5px; /* Ajusta el margen según tu preferencia */
-}
-.Conceptos7 .inline-image3 {
-    max-width: 20%;
-    max-height: 100%; /* La altura se ajustará automáticamente para mantener la proporción */
-    display: inline-block;
-    margin-right: 5px; /* Ajusta el margen según tu preferencia */
-}
-.Conceptos h4,
-.Conceptos img,
-.Conceptos2 li,
-.Conceptos2 img,
-.Conceptos3 .inline-image,
-.Conceptos4 li,
-.Conceptos4 img,
-.Conceptos5 .inline-image2,
-.Conceptos7 .inline-image3 {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px; /* Ajusta el margen según tu preferencia */
-}
-
-/* Estilos específicos para tamaños de pantalla más pequeños (móviles) */
-@media screen and (max-width: 767px) {
-    .Conceptos img,
-    .Conceptos2 img,
-    .Conceptos3 .inline-image,
-    .Conceptos4 img,
-    .Conceptos5 .inline-image2,
-    .Conceptos7 .inline-image3 {
-        max-width: 100%; /* Ajusta el ancho según tu preferencia */
-        height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
-    }
-}
-/* Estilos para el menú de navegación */
 nav {
     background-color: #333;
     overflow: hidden;
 }
 
-nav a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    background-color: #555;
-}
-
-/* Estilos para el botón de regreso al inicio */
-#back-to-top {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #007BFF;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo */
-}
-
-#back-to-top:hover {
-    background-color: #0056b3;
-}
-#back-to-top {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #007BFF;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-decoration: none; /* Elimina la subrayado predeterminado del enlace */
-}
-
-#back-to-top:hover {
-    background-color: #0056b3;
-}
-#Inicio {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    background-color: #007BFF;
-    color: white;
-    border: 2px solid #007BFF;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-#Inicio:hover {
-    background-color: #0056b3;
-    color: #fff;
-}
-nav {
-    background-color: #333;
-    overflow: hidden;
-}
-
-nav ul {
-    list-style: none; /* Elimina los puntos de la lista */
+nav ol {
+    list-style: none;
     padding: 0;
     margin: 0;
 }
 
 nav li {
-    display: inline-block;
+    display: block;
+    margin-right: 10px; /* Espaciado entre elementos de navegación */
 }
 
 nav a {
     display: block;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
     background-color: #555;
 }
 
-/* Estilos para el botón de regreso al inicio */
-#back-to-top, #Inicio {
+/* Contenido Principal */
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Botones */
+#Inicio,
+#back-to-top {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
@@ -205,31 +73,33 @@ nav a:hover {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+#Inicio,
 #back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #007BFF;
-    color: white;
-    border: 2px solid #007BFF;
-}
-
-#Inicio {
-    background-color: #007BFF;
-    color: white;
-    border: 2px solid #007BFF;
-}
-
-#back-to-top:hover, #Inicio:hover {
     background-color: #0056b3;
+    color: white;
+    border: 2px solid gold;
+}
+
+#Inicio:hover,
+#back-to-top:hover {
+    background-color: #003366;
     color: #fff;
 }
+
+/* Pie de Página */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin-top: 20px;
+    border-top: 2px solid #0056b3;
+}
+
+/* Estilos específicos para tamaños de pantalla más pequeños (móviles) */
+@media screen and (max-width: 767px) {
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
 }
